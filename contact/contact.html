@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link rel="stylesheet" href="./contact.css">
+    <link rel="stylesheet" href="../home.css">
+    <script src="contact.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <a href="../home.html">
+                    <h3>MyStore</h3>
+                </a>
+              </div>
+            <ul class="nav-links">
+                <li>
+                    <a href="../home.html">Home</a>
+                </li>
+                <li>
+                    <a href="../shop/shop.html">Shop</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="contact">
+            <h1>Contact Us</h1>
+            <p>☎ +995 555 555 555</p>
+            <form class="contact-form">
+                <h3>Or Send Us Your Mail And We Will Contact You</h3>
+                <input type="email" id="user-input" placeholder="Enter your mail here" required>
+                <button type="button" class="alert-button">Send</button>
+            </form>
+        </div>
+        <p>If you want to see the prices in USD you can check it here ⤵ </p>
+        <div class="calculator">
+            <p>GEL to USD</p>
+            <input type="number" id="gel" placeholder="₾" required>
+            <button type="button" class="exchange-button">calculate</button>
+            <span id="usd">$0.00</span>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>Follow us on:</p>
+        <div class="footer-soc">
+            <a href="">Facebook</a>
+            <a href="">twitter</a>
+            <a href="">Instagram</a>
+        </div>
+        <p>&copy; 2024 MyStore. All rights reserved.</p>
+    </footer>
+</body>
+</html>

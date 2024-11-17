@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="shop.css">
+    <script src="shop.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <a href="../home.html">
+                    <h3>MyStore</h3>
+                </a>
+              </div>
+            <ul class="nav-links">
+                <li>
+                    <a href="../home.html">Home</a>
+                </li>
+                <li>
+                    <a href="#">Shop</a>
+                </li>
+                <li>
+                    <a href="../contact/contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Featured Products</h1>
+        <section id="category-filter-section">
+            <label for="category-filter">Filter by Category:</label>
+            <select id="category-filter">
+                <option value="All">All</option>
+                <option value="Laptops">Laptops</option>
+                <option value="Smartphones">Smartphones</option>
+                <option value="Headphones">Headphones</option>
+                <option value="Cameras">Cameras</option>
+            </select>
+        </section>
+        <section class="carts">
+
+        </section>
+        <table>
+            <thead>
+                <tr>
+                    <th>Product Name</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="cart-table-body">
+            </tbody>
+        </table>
+    </main>
+    <footer class="footer">
+        <p>Follow us on:</p>
+        <div class="footer-soc">
+            <a href="">Facebook</a>
+            <a href="">twitter</a>
+            <a href="">Instagram</a>
+        </div>
+        <p>&copy; 2024 MyStore. All rights reserved.</p>
+    </footer>
+</body>
+</html>

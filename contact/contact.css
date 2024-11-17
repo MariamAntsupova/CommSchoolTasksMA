@@ -1,0 +1,43 @@
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.contact{
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    padding: 5rem;
+    border-bottom: 1px dotted white;
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input{
+    padding: 10px 20px;
+}
+button{
+    padding: 10px 20px;
+    background-color: #d61974;  
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.alert-button:hover{
+    background-color: #830f47; 
+}
+.calculator{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+}

@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #1a1a1d; 
+    color: #ffffff;
+}
+
+.nav-bar {
+    background-color: #3b1c32;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 5%;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+.logo a {
+    text-decoration: none;
+    color: white;
+    font-family: "Fredoka", sans-serif;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.nav-links {
+    gap: 15px;
+}
+
+.nav-links a {
+    color: rgba(251, 255, 240, 0.78);
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: #ffffff;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10vh 0;
+    row-gap: 55px;
+}
+
+.container {
+    padding: 20px;
+}
+
+.slider-wrapper {
+    position: relative;
+    width: 800px; 
+    margin: auto;
+    overflow: hidden;
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+.slider img {
+    width: 800px; 
+    height: 450px; 
+    object-fit: cover;
+    flex-shrink: 0; 
+}
+
+.slider-navigation {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+    border: none;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: background-color 0.3s;
+}
+
+.dot:hover {
+    background-color: white;
+}
+
+
+.footer {
+    background-color: #333;
+    width: 100%;
+    font-family: "Fredoka", sans-serif;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.footer-soc a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-soc a:not(:last-child) {
+    border-right: 2px solid white;
+    padding-right: 5px;
+}
+
+@media(max-width: 800px) {
+    .carts {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+    table{
+        font-size: smaller;
+    }
+
+    table button{
+        padding: 2px 4px;
+    }
+    .slider-wrapper {
+        width: 100%;
+    }
+
+    .slider img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media(max-width: 600px) {
+    .carts {
+        grid-template-columns: repeat(1, 1fr); 
+    }
+    .nav-bar {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+}
+
