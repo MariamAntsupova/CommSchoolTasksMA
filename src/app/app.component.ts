@@ -8,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-classwork';
+  newTask: string = '';
+
+  onTaskAdded(task: string) {
+    this.newTask = task;  
+  }
+  
 }
