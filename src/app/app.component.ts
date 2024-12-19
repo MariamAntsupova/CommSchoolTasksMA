@@ -8,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'switchTask';
+  selectedItem: string = 'Teapot';
+
+  items = ['Teapot', 'Lamp', 'Phone', 'Television', 'Fishbowl'];
+
 }
