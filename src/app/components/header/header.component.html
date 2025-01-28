@@ -1,0 +1,18 @@
+<header>
+    <a [routerLink]="['/']">
+        <div class="logo">MA</div>
+    </a>
+
+    <nav [class.active]="menuOpen">
+        <a routerLink="" routerLinkActive="active"  (click)="toggleMenu(false)">Home</a>
+        <a routerLink="/cart" routerLinkActive="active" (click)="toggleMenu(false)">Cart</a>
+        <a routerLink="/contact" routerLinkActive="active" (click)="toggleMenu(false)">Contact</a>
+    </nav>
+
+    <div class="burger" (click)="toggleMenu(!menuOpen)">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+</header>

@@ -1,0 +1,42 @@
+.not-found-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* background-image: url('https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZGo3NG51MW52cHF2c3FuZ3UwMHNnOHRucHQxYmgyZ3VhMGtqZzlkbCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/RbDKaczqWovIugyJmW/giphy.gif'); */
+  }
+  
+  .not-found-message {
+    max-width: 500px;
+    background-color: #a0937d; 
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    font-size: 3rem;
+    color: #e7d4b5; 
+  }
+  
+  p {
+    font-size: 1.2rem;
+    color: #e7d4b5;
+    margin-bottom: 20px;
+  }
+  
+  .go-home-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #b6c7aa;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .go-home-btn:hover {
+    background-color: #e7d4b5;
+  }
+  

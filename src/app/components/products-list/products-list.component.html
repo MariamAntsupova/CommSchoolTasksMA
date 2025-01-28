@@ -1,0 +1,27 @@
+<div class="filter-container">
+    <label for="category-filter">Filter by Category:</label>
+    <select id="category-filter" [(ngModel)]="selectedCategory" (change)="filterProducts()">
+      <option value="">All Categories</option>
+      <option value="Laptops">Laptops</option>
+      <option value="Smartphones">Smartphones</option>
+      <option value="Headphones">Headphones</option>
+      <option value="Cameras">Cameras</option>
+    </select>
+  </div>
+
+  <div class="product-list-container">
+    <div class="product-item" *ngFor="let product of filteredProducts">
+      <img [src]="product.image" alt="{{ product.name }}" class="product-image" (click)="goToProductDetail(product)" />
+      <div class="product-info">
+        <h3 class="product-name">{{ product.name }}</h3>
+        <p class="product-category">{{ product.category }}</p>
+        <p class="product-price">
+          <span class="old-price">old price : ${{ product.oldPrice | number: '1.2-2' }}</span>
+          new price : ${{ product.newPrice | number: '1.2-2' }}
+        </p>
+      </div>
+      <button class="add-to-cart-btn" (click)="addToCart(product)">Add to Cart</button>
+
+    </div>
+  </div>
+  
