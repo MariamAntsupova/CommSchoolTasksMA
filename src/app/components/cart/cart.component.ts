@@ -23,6 +23,11 @@ export class CartComponent implements OnInit {
   }
 
   updateQuantity(product: any, quantity: number): void {
+    if (quantity < 1) {
+      this.removeFromCart(product);
+    } else {
+      this.cartService.addToCart(product); 
+    }
     this.calculateTotal();
   }
 

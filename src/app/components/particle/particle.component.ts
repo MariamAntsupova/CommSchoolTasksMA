@@ -46,7 +46,7 @@ constructor(private renderer: Renderer2, private el: ElementRef) {}
         this.renderer.setStyle(star, 'opacity', '1');
       } else {
         this.renderer.setStyle(star, 'transform', 'scale(1)');
-        this.renderer.setStyle(star, 'opacity', '0.8');
+        this.renderer.setStyle(star, 'opacity', '0.6');
       }
     });
   }

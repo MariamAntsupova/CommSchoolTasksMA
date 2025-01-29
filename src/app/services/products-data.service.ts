@@ -26,13 +26,5 @@ export class ProductsDataService {
   getProducts(): Product[] {
     return this.products;
   }
-  addProduct(product: Product): void {
-    this.products.push(product);
-  }
 
-  removeProduct(id: number): void {
-    this.products = this.products.filter((product) => product.id !== id);
-  }
-
-  
 }
